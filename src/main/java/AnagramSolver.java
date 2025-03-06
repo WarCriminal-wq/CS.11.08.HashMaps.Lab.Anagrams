@@ -66,7 +66,8 @@ public class AnagramSolver {
      * @param anagrams
      */
     public static void printKeyValuePairs(HashMap<String, ArrayList<String>> anagrams) {
-        System.out.println("nice try diddy");
+        for (Map.Entry<String, ArrayList<String>> entry : anagrams.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
     }
-
 }
